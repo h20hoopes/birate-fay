@@ -1,2 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
 .DS_Store
 .idea
+# This has a comment on it now, it's for a test
