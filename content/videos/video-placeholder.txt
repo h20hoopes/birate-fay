@@ -1,2 +1,3 @@
-A placeholder.
+A placeholder. This is a sentence that I added in the dev branch.
 Added some more text to see what would happen.
+This is some text that I have added in the master branch.
