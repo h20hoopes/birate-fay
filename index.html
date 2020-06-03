@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 
-
-<title>Birate Fay</title>
+<title>Hayden Hoopes</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,9 +9,6 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css">
-
-
-
 
 
 <html lang="en">
@@ -27,15 +23,15 @@
         </div>
         <div class="w3-large w3-text-grey" style="font-weight:bold">
             <a href="#" class="w3-bar-item w3-button">Home</a>
-            <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">Personal <i class="fa fa-caret-down"></i></a>
-            <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a onclick="open_personal()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">Personal <i class="fa fa-caret-down"></i></a>
+            <div id="personal" class="w3-bar-block w3-hide w3-padding-large w3-medium">
                 <a href="#" class="w3-bar-item w3-button">Warp 96</a>
                 <a href="#" class="w3-bar-item w3-button">Mana Beadwork</a>
                 <a href="#" class="w3-bar-item w3-button">Music Videos</a>
                 <a href="#" class="w3-bar-item w3-button">Future Projects</a>
             </div>
-            <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">Professional <i class="fa fa-caret-down"></i></a>
-            <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a onclick="open_professional()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">Professional <i class="fa fa-caret-down"></i></a>
+            <div id="professional" class="w3-bar-block w3-hide w3-padding-large w3-medium">
                 <a href="#" class="w3-bar-item w3-button">Research</a>
                 <a href="#" class="w3-bar-item w3-button">Data Analytics</a>
                 <a href="#" class="w3-bar-item w3-button">Web Design</a>
@@ -48,12 +44,9 @@
         </div>
         <a href="#footer" class="w3-bar-item w3-button w3-padding">Blog</a>
         <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
-        <a href="#footer" class="w3-bar-item w3-button w3-padding">Experimental</a>
+        <a href="html/testPage.html" class="w3-bar-item w3-button w3-padding">Experimental</a>
     </div>
 </nav>
-
-
-
 
 <!-- Page header / logo-->
     <header class="w3-row w3-padding-16 w3-mobile w3-white">
@@ -92,18 +85,11 @@
     <a href="html/testPage.html" class="w3-bar-item w3-button">Experimental</a>
 </div>
 
-
-
-
-
-
     <!-- Top menu on small screens -->
     <header class="w3-bar w3-top w3-hide-large w3-hide-medium w3-white w3-xlarge"><img class="w3-image w3-padding-16 w3-margin-left w3-wide" style="max-width: 70%;" src="content/images/logo.png"></a>
 <!--        <div class="w3-bar-item w3-padding-24 w3-wide">Hayden Hoopes</div>-->
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
     </header>
-
-
 
     <!-- Overlay effect when opening sidebar on small screens -->
     <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -290,6 +276,32 @@
         function w3_open() {
             document.getElementById("mySidebar").style.display = "block";
             document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function open_personal() {
+            var x = document.getElementById("personal");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+    }
+
+        function open_professional() {
+            var x = document.getElementById("professional");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+
+        function close_personal() {
+            document.getElementById("personal").style.display = "none";
+        }
+
+        function close_profeesional() {
+            document.getElementById("professional").style.display = "none";
         }
 
         function w3_close() {
