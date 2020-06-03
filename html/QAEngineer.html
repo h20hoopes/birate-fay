@@ -9,61 +9,10 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/style.css">
-<script>// Accordion
-function myAccFunc() {
-    var x = document.getElementById("demoAcc");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
-
-// Open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
-
-function open_personal() {
-    var x = document.getElementById("personal");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-function open_professional() {
-    var x = document.getElementById("professional");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-
-function close_personal() {
-    document.getElementById("personal").style.display = "none";
-}
-
-function close_profeesional() {
-    document.getElementById("professional").style.display = "none";
-}
-
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}</script>
-
+<script src="../js/norm.js"></script>
 
 <html lang="en">
 <body class="w3-content" style="max-width:100%">
-
 <!--     Sidebar/menu -->
 <nav class="w3-hide-large w3-bar-block w3-white w3-collapse w3-top w3-hide-medium" style="z-index:3;width:250px;display: none" id="mySidebar">
     <div class="w3-sidebar">
@@ -97,16 +46,14 @@ function w3_close() {
         <a href="Experimental.html" class="w3-bar-item w3-button w3-padding">Experimental</a>
     </div>
 </nav>
-
 <!-- Page header / logo-->
-<header class="w3-row w3-padding-16 w3-mobile w3-white">
+    <header class="w3-row w3-padding-16 w3-mobile w3-white">
     <div style="margin: auto">
         <a href="../index.html"><img class="w3-image" style="margin: auto; max-width: 50%; display: block; max-height: 50px" src="../content/images/logo.png"></a>
     </div>
 </header>
-
 <!--Full screen nav bar-->
-<div class="w3-bar w3-dark-grey w3-centered w3-hide-small">
+    <div class="w3-bar w3-dark-grey w3-centered w3-hide-small">
     <a href="../index.html" class="w3-bar-item w3-button">Home</a>
     <div class="w3-dropdown-hover">
         <button class="w3-button">Personal</button>
@@ -134,18 +81,17 @@ function w3_close() {
     <a href="Contact.html" class="w3-bar-item w3-button">Contact</a>
     <a href="Experimental.html" class="w3-bar-item w3-button">Experimental</a>
 </div>
-
 <!-- Top menu on small screens -->
-<header class="w3-bar w3-top w3-hide-large w3-hide-medium w3-white w3-xlarge">
-    <a href="../index.html">
-        <img class="w3-image w3-padding-16 w3-margin-left w3-wide" style="max-width: 70%;" src="../content/images/logo.png">
-    </a>
+    <header class="w3-bar w3-top w3-hide-large w3-hide-medium w3-white w3-xlarge">
+        <a href="../index.html">
+            <img class="w3-image w3-padding-16 w3-margin-left w3-wide" style="max-width: 70%;" src="../content/images/logo.png">
+        </a>
     <!--        <div class="w3-bar-item w3-padding-24 w3-wide">Hayden Hoopes</div>-->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-</header>
-
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+    </header>
 <!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
 
 <h1 class="w3-center w3-deep-purple ">QA Engineer</h1>
 
