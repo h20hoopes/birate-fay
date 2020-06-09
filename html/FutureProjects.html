@@ -10,47 +10,20 @@
     <link rel="stylesheet" href="../css/rainbow.css">
     <link rel="icon" href="../content/favicon-32x32.png" type="image/gif" sizes="16x16">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="../js/full-nav.js"></script>
     <script src="../js/norm.js"></script>
+    <script src="../js/sidebar.js"></script>
 </head>
 
 <body class="w3-content" style="max-width:100%">
 
 <!--     Sidebar/menu -->
-<nav class="w3-hide-large w3-bar-block w3-white w3-collapse w3-top w3-hide-medium" style="z-index:3;width:250px;display: none" id="mySidebar">
-    <div class="w3-sidebar">
-        <div class="w3-container ws3-display-container w3-padding-16">
-            <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-            <h3 class=""><b>About Me</b></h3>
-        </div>
-        <div class="w3-large w3-text-grey" style="font-weight:bold">
-            <a href="../index.html" class="w3-bar-item w3-button">Home</a>
-            <a onclick="open_personal()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">Personal <i class="fa fa-caret-down"></i></a>
-            <div id="personal" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-                <a href="Warp96.html" class="w3-bar-item w3-button">Warp 96</a>
-                <a href="http://www.manabeadwork.com" class="w3-bar-item w3-button">Mana Beadwork</a>
-                <a href="MusicVideos.html" class="w3-bar-item w3-button">Music Videos</a>
-                <a href="FutureProjects.html" class="w3-bar-item w3-button">Future Projects</a>
-            </div>
-            <a onclick="open_professional()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align">Professional <i class="fa fa-caret-down"></i></a>
-            <div id="professional" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-                <a href="Research.html" class="w3-bar-item w3-button">Research</a>
-                <a href="DataAnalytics.html" class="w3-bar-item w3-button">Data Analytics</a>
-                <a href="WebDesign.html" class="w3-bar-item w3-button">Web Design</a>
-                <a href="QAEngineer.html" class="w3-bar-item w3-button">QA Engineer</a>
-                <a href="Service.html" class="w3-bar-item w3-button">Service</a>
-                <a href="RelevantClasses.html" class="w3-bar-item w3-button">Relevant Classes</a>
-                <a href="ITSecurity.html" class="w3-bar-item w3-button">IT Security</a>
-                <a href="Database.html" class="w3-bar-item w3-button">Database</a>
-            </div>
-        </div>
-        <a href="Blog.html" class="w3-bar-item w3-button w3-padding">Blog</a>
-        <a href="Contact.html" class="w3-bar-item w3-button w3-padding">Contact</a>
-        <a href="Experimental.html" class="w3-bar-item w3-button w3-padding">Experimental</a>
-    </div>
-</nav>
-
+<div id="sidebar"></div>
 <!-- Page header / logo-->
 <header class="w3-row w3-padding-16 w3-mobile w3-white">
     <div style="margin: auto">
