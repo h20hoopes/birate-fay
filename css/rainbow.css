@@ -1,6 +1,6 @@
 /*This is coded CSS rainbow*/
 
-.experimental {
+.experimental-small {
     -webkit-animation:rainbow 1s infinite;
     -ms-animation:rainbow 1s infinite;
     -o-animation:rainbow 1s infinite;
@@ -57,4 +57,11 @@
     80% {color: #0000ff;}
     90% {color: #8000ff;}
     100% {color: #ff0080;}
+}
+
+.experimental:hover {
+    -webkit-animation:rainbow 1s infinite;
+    -ms-animation:rainbow 1s infinite;
+    -o-animation:rainbow 1s infinite;
+    animation:rainbow 1s infinite;
 }

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <title>Hayden Hoopes | Home</title>
+<link rel="icon" href="content/favicon-32x32.png" type="image/gif" sizes="16x16">
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +12,8 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/rainbow.css">
 <script src="js/norm.js"></script>
-
+<script src="js/jquery.js"></script>
+<script src="js/index-full-nav.js"></script>
 
 <html lang="en">
 <body class="w3-content" style="max-width:100%">
@@ -46,7 +48,7 @@
         </div>
         <a href="html/Blog.html" class="w3-bar-item w3-button w3-padding">Blog</a>
         <a href="html/Contact.html" class="w3-bar-item w3-button w3-padding">Contact</a>
-        <a href="html/Experimental.html" class="experimental w3-bar-item w3-button w3-padding">Experimental</a>
+        <a href="html/Experimental.html" class="experimental-small w3-bar-item w3-button w3-padding">Experimental</a>
     </div>
 </nav>
 
@@ -56,35 +58,10 @@
             <a href="index.html"><img class="w3-image" style="margin: auto; max-width: 50%; display: block; max-height: 50px" src="content/images/logo.png"></a>
         </div>
     </header>
+
 <!--Full screen nav bar-->
-    <div class="w3-bar w3-dark-grey w3-centered w3-hide-small">
-    <a href="index.html" class="w3-bar-item w3-button">Home</a>
-    <div class="w3-dropdown-hover">
-        <button class="w3-button">Personal</button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">
-            <a href="html/Warp96.html" class="w3-bar-item w3-button">Warp 96</a>
-            <a href="http://www.manabeadwork.com" class="w3-bar-item w3-button">Mana Beadwork</a>
-            <a href="html/MusicVideos.html" class="w3-bar-item w3-button">Music Videos</a>
-            <a href="html/FutureProjects.html" class="w3-bar-item w3-button">Future Projects</a>
-        </div>
-    </div>
-    <div class="w3-dropdown-hover">
-        <button class="w3-button">Professional</button>
-        <div class="w3-dropdown-content w3-bar-block w3-border">
-            <a href="html/Research.html" class="w3-bar-item w3-button">Research</a>
-            <a href="html/DataAnalytics.html" class="w3-bar-item w3-button">Data Analytics</a>
-            <a href="html/WebDesign.html" class="w3-bar-item w3-button">Web Design</a>
-            <a href="html/QAEngineer.html" class="w3-bar-item w3-button">QA Engineer</a>
-            <a href="html/Service.html" class="w3-bar-item w3-button">Service</a>
-            <a href="html/RelevantClasses.html" class="w3-bar-item w3-button">Relevant Classes</a>
-            <a href="html/ITSecurity.html" class="w3-bar-item w3-button">IT Security</a>
-            <a href="html/Database.html" class="w3-bar-item w3-button">Database</a>
-        </div>
-    </div>
-    <a href="html/Blog.html" class="w3-bar-item w3-button">Blog</a>
-    <a href="html/Contact.html" class="w3-bar-item w3-button">Contact</a>
-    <a href="html/Experimental.html" class="experimental w3-bar-item w3-button">Experimental</a>
-</div>
+<div id="index-navigation"></div>
+
 <!-- Top menu on small screens -->
     <header class="w3-bar w3-top w3-hide-large w3-hide-medium w3-white w3-xlarge"><img class="w3-image w3-padding-16 w3-margin-left w3-wide" style="max-width: 70%;" src="content/images/logo.png"></a>
 <!--        <div class="w3-bar-item w3-padding-24 w3-wide">Hayden Hoopes</div>-->
