@@ -1,0 +1,17 @@
+.blog-title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+}
+
+.blog-image {
+    max-width: 100%;
+    max-height: 1000px;
+    margin: auto;
+}
+
+.blog-date {
+    font-weight: lighter;
+    font-style: italic;
+}

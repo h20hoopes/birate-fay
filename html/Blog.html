@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/rainbow.css">
+    <link rel="stylesheet" href="../css/blog.css">
     <link rel="icon" href="../content/favicon-32x32.png" type="image/gif" sizes="16x16">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -18,9 +19,12 @@
     <script src="../js/full-nav.js"></script>
     <script src="../js/norm.js"></script>
     <script src="../js/sidebar.js"></script>
+    <script src="../js/dataExtractor.js"></script>
 </head>
 
 <body class="w3-content" style="max-width:100%">
+<!--Background-->
+<img src="../content/images/cool-background.png" style="position: fixed; z-index: -1; min-width: 100%; min-height: 100%">
 
 <!--     Sidebar/menu -->
 <div id="sidebar"></div>
@@ -46,7 +50,19 @@
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<h1 class="w3-center w3-deep-purple ">Blog</h1>
+<h1 class="w3-containers w3-center">Blog</h1>
+<div class="w3-left-align w3-quarter">List of articles
+</div>
+
+<div class="w3-container w3-center w3-half">
+    <div class="w3-container " id="blogtest"></div>
+    <hr style="color: black">
+    <div class="w3-container " id="anotherblog"></div>
+</div>
+
+<button class="w3-button" onclick="extract('../content/text/20200229.xml', 'blogtest')">Get XML data</button>
+<button class="w3-button" onclick="extract('../content/text/20200229.xml', 'anotherblog')">Get More XML data</button>
+
 
 </body>
 </html>
