@@ -51,18 +51,18 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <h1 class="w3-containers w3-center">Blog</h1>
-<div class="w3-left-align w3-quarter">List of articles
+<div class="w3-quarter w3-container">
+
+    <div id="blog-select" class="w3-center">
+        <h2 class="w3-container">Select a post</h2>
+        <button class="w3-button" onclick="extract('blog')" value="all">All</button><br>
+    </div>
+
 </div>
 
 <div class="w3-container w3-center w3-half">
-    <div class="w3-container " id="blogtest"></div>
-    <hr style="color: black">
-    <div class="w3-container " id="anotherblog"></div>
+    <div class="w3-container " id="blogspace"></div>
 </div>
-
-<button class="w3-button" onclick="extract('../content/text/20200229.xml', 'blogtest')">Get XML data</button>
-<button class="w3-button" onclick="extract('../content/text/20200229.xml', 'anotherblog')">Get More XML data</button>
-
 
 </body>
 </html>
