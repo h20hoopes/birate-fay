@@ -1,22 +1,20 @@
-function extract(type) {
-    $("button").click(function() {
-        var buttonValue = $(this).val();
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function () {
-        if (this.readyState === 4 && this.status === 200) {
+function extract(type, buttonValue) {
+            console.log(buttonValue);
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState === 4 && this.status === 200) {
+                    if (type === "blog") {
+                        // If document is a blogpost
+                        parseBlog(this, 'blogspace', buttonValue);
+                    }
+                }
+            };
             if (type === "blog") {
-                // If document is a blogpost
-                parseBlog(this, 'blogspace', buttonValue);
+                xhttp.open("GET", '../content/text/blogsite.xml', true);
+            } else {
+                return false;
             }
-        }
-    };
-    if (type === "blog") {
-        xhttp.open("GET", '../content/text/blogsite.xml', true);
-    } else {
-        return false;
-    }
-    xhttp.send();
-    });
+            xhttp.send();
 }
 
 function parseBlog(xml, elementid, buttonValue) {
@@ -103,7 +101,8 @@ function formatArticle(year, month, day, title, author, body, image) {
             console.log(articleTitles);
 
             for (numArts = 0; numArts < articleTitles.length; numArts++) {
-                document.getElementById("blog-select").innerHTML += "<button class='w3-button' onclick='extract(\"blog\")'value='" + numArts + "'>" + articleTitles[numArts].childNodes[0].nodeValue + "</button><br>";
+                document.getElementById("blog-select").innerHTML += "<button class='w3-button' id='blog" +
+                    numArts + "' onclick='extract(\"blog\", (this.value))' value='" + numArts + "'>" + articleTitles[numArts].childNodes[0].nodeValue + "</button><br>";
             }
         }
     };
