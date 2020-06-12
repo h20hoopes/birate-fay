@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/rainbow.css">
     <link rel="stylesheet" href="../css/blog.css">
     <link rel="icon" href="../content/favicon-32x32.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
@@ -23,7 +24,7 @@
     <script src="../js/background.js"></script>
 </head>
 
-<body class="w3-content" style="max-width:100%">
+<body class="w3-content" style="max-width:100%" onload="extract('blog', 'all')">
 <!--Background-->
 <div id="background"></div>
 <!--     Sidebar/menu -->
@@ -64,5 +65,16 @@
     <div class="w3-container " id="blogspace"></div>
 </div>
 
+<div class="w3-container w3-center w3-quarter">
+    <a href="#" class="fa fa-social fa-facebook"></a>
+    <a href="#"class="fa fa-social fa-instagram"></a>
+    <a href="#"class="fa fa-social fa-google"></a>
+    <a href="#"class="fa fa-social fa-linkedin"></a>
+</div>
+
+
+
+<div id="footer" class="w3-container w3-padding-32">
+</div>
 </body>
 </html>
