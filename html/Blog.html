@@ -25,19 +25,17 @@
 </head>
 
 <body class="w3-content" style="max-width:100%" onload="extract('blog', 'all')">
+
 <!--Background-->
 <div id="background"></div>
+
+
 <!--     Sidebar/menu -->
 <div id="sidebar"></div>
-<!-- Page header / logo-->
-<header class="w3-row w3-padding-16 w3-mobile w3-white">
-    <div style="margin: auto">
-        <a href="../index.html"><img class="w3-image" style="margin: auto; max-width: 50%; display: block; max-height: 50px" src="../content/images/logo.png"></a>
-    </div>
-</header>
+
 
 <!--Full screen nav bar-->
-<div id="navigation"></div>
+<div id="navigation" class=""></div>
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-hide-medium w3-white w3-xlarge">
@@ -51,30 +49,23 @@
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<h1 class="w3-containers w3-center">Blog</h1>
-<div class="w3-quarter w3-container">
 
-    <div id="blog-select" class="w3-center">
-        <h2 class="w3-container">Select a post</h2>
-        <button class="w3-button" onclick="extract('blog', this.value)" value="all">All</button><br>
-    </div>
 
-</div>
+<!--Dropdown-->
+<form class="extra-padding" style="display:block; margin-top: 16px">
+    <select id="blog-select" onchange="extract('blog', this.value);">
+        <option selected disabled>Select an article</option>
+        <option class="w3-bar-item w3-button" value="all">All Articles</option>
+    </select>
+</form>
 
-<div class="w3-container w3-center w3-half">
-    <div class="w3-container " id="blogspace"></div>
-</div>
-
-<div class="w3-container w3-center w3-quarter">
-    <a href="#" class="fa fa-social fa-facebook"></a>
-    <a href="#"class="fa fa-social fa-instagram"></a>
-    <a href="#"class="fa fa-social fa-google"></a>
-    <a href="#"class="fa fa-social fa-linkedin"></a>
+<h1 class="w3-container w3-center">Blog</h1>
+<div style="max-width: 800px; margin: auto">
+    <div class="w3-container" id="blogspace"></div>
 </div>
 
 
 
-<div id="footer" class="w3-container w3-padding-32">
-</div>
+<div id="footer"></div>
 </body>
 </html>

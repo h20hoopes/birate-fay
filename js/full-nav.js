@@ -1,7 +1,22 @@
 $(function() {
     $("#navigation").append("" +
-        "<div class=\"w3-bar w3-dark-grey w3-centered w3-hide-small w3-small\">\n" +
-        "    <a href=\"../index.html\" class=\"w3-bar-item w3-button\">Home</a>\n" +
+ // logo
+        "<header class=\"w3-row w3-padding-16 w3-hide-small w3-white one-edge-shadow\" style=\"z-index: 2\">\n" +
+        "    <div style=\"margin: auto\">\n" +
+        "        <a href=\"../index.html\"><img class=\"w3-image\" style=\"margin: auto; max-width: 50%; display: block; max-height: 50px\" src=\"../content/images/logo.png\"></a>\n" +
+        "    </div>\n" +
+        "</header>" +
+
+        "<!-- Page header / logo-->\n" +
+        "    <header class=\"w3-row w3-padding-16 w3-mobile w3-white one-edge-shadow w3-hide-medium w3-hide-large\">\n" +
+        "    <div style=\"margin: auto\">\n" +
+        "        <a href=\"../index.html\"><img class=\"w3-image\" style=\"margin: auto; max-width: 50%; display: block; max-height: 50px\" src=\"../content/images/logo.png\"></a>\n" +
+        "    </div>\n" +
+        "</header>" +
+
+// Sub nav
+        "<div class=\" w3-white w3-hide-small w3-center w3-small one-edge-shadow\" style='z-index: 2; margin-bottom: 16px'>\n" +
+        "    <a href=\"../index.html\" class=\"w3-button\">Home</a>\n" +
         "    <div class=\"w3-dropdown-hover\">\n" +
         "        <button class=\"w3-button\">Personal</button>\n" +
         "        <div class=\"w3-dropdown-content w3-bar-block w3-border\">\n" +
@@ -28,4 +43,8 @@ $(function() {
         "    <a href=\"Contact.html\" class=\"w3-bar-item w3-button\">Contact</a>\n" +
         "    <a href=\"Experimental.html\" class=\"experimental w3-bar-item w3-button w3-hover-black\">Experimental</a>\n" +
         "</div>");
+
+
+    $("#footer").append("" +
+        "<div class=\"w3-center w3-padding-24 w3-bar\" style='background-color: #FFAADE; color:white'>A website by Hayden Hoopes</div>\n");
 });

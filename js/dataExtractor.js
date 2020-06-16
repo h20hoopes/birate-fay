@@ -101,8 +101,8 @@ function formatArticle(year, month, day, title, author, body, image) {
             console.log(articleTitles);
 
             for (numArts = 0; numArts < articleTitles.length; numArts++) {
-                document.getElementById("blog-select").innerHTML += "<button class='w3-button' id='blog" +
-                    numArts + "' onclick='extract(\"blog\", (this.value))' value='" + numArts + "'>" + articleTitles[numArts].childNodes[0].nodeValue + "</button><br>";
+                document.getElementById("blog-select").innerHTML += "<option class='w3-bar-item w3-button' id='blog" +
+                    numArts + "' value='" + numArts + "'>" + articleTitles[numArts].childNodes[0].nodeValue + "</option>";
             }
         }
     };
