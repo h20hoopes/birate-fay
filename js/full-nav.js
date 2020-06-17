@@ -41,7 +41,7 @@ $(function() {
         "    </div>\n" +
         "    <a href=\"Blog.html\" class=\"w3-bar-item w3-button\">Blog</a>\n" +
         "    <a href=\"Contact.html\" class=\"w3-bar-item w3-button\">Contact</a>\n" +
-        "    <a href=\"Experimental.html\" class=\"experimental w3-bar-item w3-button w3-hover-black\">Experimental</a>\n" +
+        "    <a href=\"Experimental.html\" class=\"experimental-small experimental w3-bar-item w3-button\">Experimental</a>\n" +
         "</div>");
 
 
