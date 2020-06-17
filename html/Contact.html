@@ -22,27 +22,38 @@
 
 <html lang="en">
 <body class="w3-content" style="max-width:100%">
+
 <!--Background-->
 <div id="background"></div>
+
+
 <!--     Sidebar/menu -->
 <div id="sidebar"></div>
 
+
 <!--Full screen nav bar-->
-<div id="navigation"></div>
+<div id="navigation" class=""></div>
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-hide-medium w3-white w3-xlarge">
     <a href="../index.html">
         <img class="w3-image w3-padding-16 w3-margin-left w3-wide" style="max-width: 70%;" src="../content/images/logo.png">
     </a>
-    <!--        <div class="w3-bar-item w3-padding-24 w3-wide">Hayden Hoopes</div>-->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-16 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-<h1 class="w3-center w3-deep-purple ">This is a contact page</h1>
+<div class="w3-bar w3-blue">
+    <a class="w3-button w3-bar-item experimental" href="../content/hayden_resume_feb_13_2020.pdf" download>Download Resume</a>
+</div><br>
+
+<div class="w3-half w3-center">
+    <object height="100%" data="../content/hayden_resume_feb_13_2020.pdf" style="min-width: 425px; min-height: 600px" class="w3-animate-right w3-hide-small"></object><br>
+</div><br>
+
+<div id="footer"></div>
 
 </body>
 </html>

@@ -46,5 +46,6 @@ $(function() {
 
 
     $("#footer").append("" +
+        "<br>" +
         "<div class=\"w3-center w3-padding-24 w3-bar\" style='background-color: #FFAADE; color:white'>A website by Hayden Hoopes</div>\n");
 });
