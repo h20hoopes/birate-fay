@@ -114,7 +114,7 @@ function parseContact(xml, elementid) {
     desiredFieldsOfWork = desiredFieldsOfWork.getElementsByTagName("field");
 
     formattedPage =
-        "<div class='w3-panel w3-card w3-white'><br>" +
+        "<div class='w3-panel w3-card w3-white w3-hover-light-grey'><br>" +
             "<img style='max-width:100%' class='contact-img' src=" + image + "><br>" +
             "<p class='contact-name'>" + firstName + " " + lastName + "</p>" +
             "<p class='contact-phone'><i class='fa fa-fw fa-map-marker'></i> " + countryCode + " (" + areaCode + ") " + phoneNumber +
@@ -142,21 +142,4 @@ function parseContact(xml, elementid) {
 
     document.getElementById(elementid).innerHTML = formattedPage;
 
-}
-function formatArticle(year, month, day, title, author, body, image) {
-    var formattedArticle, i;
-
-    body = body.getElementsByTagName("line");
-
-    formattedArticle = "<div class='w3-white w3-panel w3-card'><br>" +
-        "<img class='blog-image' alt='a blog picture' src=" + image + ">" +"<br>" +
-        "<p class='blog-title'>" + title + "</p>" +
-        "<p class='blog-date'>" + month + " " + day + ", " + year + "</p>" +
-        "<p class='blog-author'>" + author + "</p>" + "<br>"
-    ;
-    for (i = 0; i < body.length; i++) {
-        formattedArticle += body[i].childNodes[0].nodeValue + "<br><br>";
-    }
-    formattedArticle += "</div>";
-    return formattedArticle;
 }
