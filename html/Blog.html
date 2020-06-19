@@ -21,6 +21,7 @@
     <script src="../js/norm.js"></script>
     <script src="../js/sidebar.js"></script>
     <script src="../js/dataExtractor.js"></script>
+    <script src="../js/blogLoader.js"></script>
     <script src="../js/background.js"></script>
 </head>
 
@@ -52,7 +53,7 @@
 
 <!--Dropdown-->
 <form class="extra-padding" style="display:block; margin-top: 16px">
-    <select id="blog-select" onchange="extract('blog', this.value);">
+    <select id="blog-select" onchange="extract('blog', '../content/text/blogsite.xml', this.value,);">
         <option selected disabled>Select an article</option>
         <option class="w3-bar-item w3-button" value="all">All Articles</option>
     </select>

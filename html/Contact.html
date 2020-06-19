@@ -18,10 +18,11 @@
     <script src="../js/norm.js"></script>
     <script src="../js/sidebar.js"></script>
     <script src="../js/background.js"></script>
+    <script src="../js/dataExtractor.js"></script>
 </head>
 
 <html lang="en">
-<body class="w3-content" style="max-width:100%">
+<body class="w3-content" style="max-width:100%" onload="extract('contact', '../content/text/contact.xml')">
 
 <!--Background-->
 <div id="background"></div>
@@ -49,9 +50,14 @@
     <a class="w3-button w3-bar-item experimental" href="../content/hayden_resume_feb_13_2020.pdf" download>Download Resume</a>
 </div><br>
 
-<div class="w3-half w3-center">
-    <object height="100%" data="../content/hayden_resume_feb_13_2020.pdf" style="min-width: 425px; min-height: 600px" class="w3-animate-right w3-hide-small"></object><br>
+
+
+<div style="max-width: 800px; margin: auto">
+    <div class="w3-container" id="contactCard" style="min-height: 1000px"></div>
 </div><br>
+
+
+
 
 <div id="footer"></div>
 
