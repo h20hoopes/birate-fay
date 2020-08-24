@@ -20,7 +20,7 @@ $(function() {
         "    <div class=\"w3-dropdown-hover\">\n" +
         "        <button class=\"w3-button\">Personal</button>\n" +
         "        <div class=\"w3-dropdown-content w3-bar-block w3-border\">\n" +
-        "            <a href=\"Warp96.html\" class=\"w3-bar-item w3-button\">Warp 96</a>\n" +
+        "            <a href=\"Music.html\" class=\"w3-bar-item w3-button\">Music</a>\n" +
         "            <a href=\"http://www.manabeadwork.com\" class=\"w3-bar-item w3-button\">Mana Beadwork</a>\n" +
         "            <a href=\"MusicVideos.html\" class=\"w3-bar-item w3-button\">Music Videos</a>\n" +
         "            <a href=\"FutureProjects.html\" class=\"w3-bar-item w3-button\">Future Projects</a>\n" +

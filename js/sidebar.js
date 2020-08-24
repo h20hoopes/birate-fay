@@ -10,7 +10,7 @@ $(function() {
         "            <a href=\"../index.html\" class=\"w3-bar-item w3-button\">Home</a>\n" +
         "            <a onclick=\"open_personal()\" href=\"javascript:void(0)\" class=\"w3-button w3-block w3-white w3-left-align\">Personal <i class=\"fa fa-caret-down\"></i></a>\n" +
         "            <div id=\"personal\" class=\"w3-bar-block w3-hide w3-padding-large w3-medium\">\n" +
-        "                <a href=\"Warp96.html\" class=\"w3-bar-item w3-button\">Warp 96</a>\n" +
+        "                <a href=\"Music.html\" class=\"w3-bar-item w3-button\">Music</a>\n" +
         "                <a href=\"http://www.manabeadwork.com\" class=\"w3-bar-item w3-button\">Mana Beadwork</a>\n" +
         "                <a href=\"MusicVideos.html\" class=\"w3-bar-item w3-button\">Music Videos</a>\n" +
         "                <a href=\"FutureProjects.html\" class=\"w3-bar-item w3-button\">Future Projects</a>\n" +

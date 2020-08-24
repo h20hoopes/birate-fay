@@ -48,5 +48,95 @@
 
 <h1 class="w3-center w3-deep-purple ">Experimental</h1>
 
+<div class="w3-row-padding" style="max-width: 1200px; margin: auto">
+    <div class="w3-col s6 m4 l3">
+        <div class="w3-container w3-orange w3-card">
+        <p>This is a product</p>
+        <p><b>$4.99</b></p>
+            <p>This is some information about the product. It is probably really useful to have this information</p>
+        </div>
+    </div>
+    <div class="w3-col s6 m4 l3">
+        <div class="w3-container w3-blue w3-card">
+        <p>This is a product</p>
+        <p><b>$4.99</b></p>
+            <p>This is some information about the product. It is probably really useful to have this information</p>
+        </div>
+    </div>
+    <div class="w3-col s6 m4 l3">
+        <div class="w3-container w3-yellow w3-card">
+        <p>This is a product</p>
+        <p><b>$4.99</b></p>
+            <p>This is some information about the product. It is probably really useful to have this information</p>
+        </div>
+    </div>
+    <div class="w3-col s6 m4 l3">
+        <div class="w3-container w3-green w3-card">
+        <p>This is a product</p>
+        <p><b>$4.99</b></p>
+            <p>This is some information about the product. It is probably really useful to have this information</p>
+        </div>
+    </div>
+</div>
+
+<div class="w3-row-padding">
+    <div class="w3-col s4 w3-green">
+        <p>Hayden</p>
+    </div>
+    <div class="w3-col s4 w3-green">
+        <p>Hayden</p>
+    </div>
+    <div class="w3-col s4 w3-green">
+        <p>Hayden</p>
+    </div>
+</div>
+
+<div class="w3-row-padding">
+    <div class="w3-col s4">
+        <img src="../content/images/IMG_1477.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+        <img src="../content/images/IMG_1477.jpg" style="width:100%">
+    </div>
+    <div class="w3-col s4">
+        <img src="../content/images/IMG_1477.jpg" style="width:100%">
+    </div>
+</div>
+
+<br><br>
+
+
+<!--Paypal test-->
+<div id="paypal-button-container"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script>
+    paypal.Buttons({
+        style: {
+            shape: 'rect',
+            color: 'white',
+            layout: 'horizontal',
+            label: 'paypal',
+
+        },
+        createOrder: function(data, actions) {
+            return actions.order.create({
+                purchase_units: [{
+                    amount: {
+                        value: '1'
+                    }
+                }]
+            });
+        },
+        onApprove: function(data, actions) {
+            return actions.order.capture().then(function(details) {
+                alert('Transaction completed by ' + details.payer.name.given_name + '!');
+            });
+        }
+    }).render('#paypal-button-container');
+</script>
+
+<br><br>
+<!--1s0r1eYDY6pYoHRCiaoARuoubPg_ygahpjZhs5Arm4JY  this is the Google Sheet id-->
+
 </body>
 </html>
